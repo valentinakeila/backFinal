@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('combined'));
  app.use(cors({
-    origin: 'http://localhost:4200'
+    origin: 'https://backfinal-production-29e7.up.railway.app/'
 })); 
 
 //Traemos las rutas
