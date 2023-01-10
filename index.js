@@ -12,9 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('combined'));
- app.use(cors({
-    origin: 'https://backfinal-production-29e7.up.railway.app/'
-})); 
+ app.use(cors()); 
 
 //Traemos las rutas
 app.use('/api', require('./routes/consultasRouter'));
